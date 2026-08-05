@@ -1,0 +1,22 @@
+.manage-flow .flow-name {
+  color: #868dff;
+}
+.manage-flow .flow-logs {
+  color: #fad05f;
+}
+.manage-flow .table-cancel {
+  color: #ff7d75;
+}
+
+.flow-history .flow-history-count {
+  color: #868dff;
+}
+.flow-history .flow-history-user-sid {
+  color: #fad05f;
+  letter-spacing: 1px;
+}
+.flow-history .table-cancel {
+  color: #ff7d75;
+}
+
+/*# sourceMappingURL=manage-flow.css.map */
