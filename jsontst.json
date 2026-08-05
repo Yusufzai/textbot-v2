@@ -1,0 +1,101 @@
+{
+    "drawflow": {
+        "Home": {
+            "data": {
+                "737f6ef9-51f4-44c6-973b-6d3078d9b023": {
+                    "id": "737f6ef9-51f4-44c6-973b-6d3078d9b023",
+                    "name": "set-variables",
+                    "data": {
+                        "widget_name": "Test it"
+                    },
+                    "class": "set-variables",
+                    "html": "\n                <div>\n                    <div class=\"title-box\"><span class=\"icon\" ><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-terminal\"><polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" y1=\"19\" x2=\"20\" y2=\"19\"></line></svg></span> Set Variables </div>\n                    <div class=\"box\">\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-6\"> \n                                <input id=\"set-variable-widgetName\" placeholder=\"Widget Name\" type=\"text\" df-widget_name>\n                            </div>\n                        </div>\n\n\n                        <div class=\"create-variable-container \">\n\n                            <div class=\"collapsable-container\">\n\n                                <a href=\"javascript:void(0);\" class=\"create-variables collapsable-toggle btn-add-fn\" data-onOpenText='<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x-circle\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line></svg>' data-onCloseText=\"Add Variable\">Add Variable</a>\n\n                                <div id=\"expand\" class=\"add-active\">\n                                \n                                    <div class=\"form-variable mt-2\">\n                                        <input class=\"var-key\" placeholder=\"Key\" type=\"text\"/>\n                                        <textarea class=\"var-value mt-3\" placeholder=\"Value\"></textarea>\n                                        <a href=\"javascript:void(0);\" class=\"add-variable add-content\">Add</a>\n                                        <a href=\"javascript:void(0);\" class=\"save-variable save-content\">Save</a>\n                                    </div>\n\n                                </div>\n\n                            </div>\n\n                            <div class=\"collapsable-container collapsable-table\">\n\n                                <a href=\"javascript:void(0);\" class=\"collapsable-toggle btn-show-list\" data-onOpenText='<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x-circle\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line></svg>' data-onCloseText='Show Table <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-chevrons-down\"><polyline points=\"7 13 12 18 17 13\"></polyline><polyline points=\"7 6 12 11 17 6\"></polyline></svg>'>Show Table <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-chevrons-down\"><polyline points=\"7 13 12 18 17 13\"></polyline><polyline points=\"7 6 12 11 17 6\"></polyline></svg></a>\n\n                                <div id=\"expand\" class=\"table-responsive\">\n\n                                    <table class=\"variable-table table\">\n                                        <thead>\n                                            <tr>\n                                                <th>Key</th>\n                                                <th>Value</th>\n                                                <th>Actions</th>\n                                            </tr>\n                                        </thead>\n\n                                        <tbody>\n                                        </tbody>\n                                    </table>\n                                \n                                </div>\n\n                            </div>\n\n                        </div>\n                        \n                    </div>\n                </div>\n            ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": []
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "f7275611-671f-4b01-9e46-fec8409f8716",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 105,
+                    "pos_y": 29
+                },
+                "24f08951-3d30-4d7e-8ec5-8830c0b84504": {
+                    "id": "24f08951-3d30-4d7e-8ec5-8830c0b84504",
+                    "name": "send-message-wait",
+                    "data": {
+                        "widget_name": "sf",
+                        "message": "safsfgsg",
+                        "replytime": "sdafsa",
+                        "mediaurl": "dfsdaf"
+                    },
+                    "class": "send-message-wait",
+                    "html": "\n                <div>\n                    <div class=\"title-box\"><span class=\"icon\" ><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-message-circle\"><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"></path></svg></span> Send Message and Wait</div>\n                    <div class=\"box\">\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-6\">\n                                <input id=\"message-wait-widgetName\" type=\"text\" placeholder=\"Widget Name\" df-widget_name>\n                            </div>\n\n                            <div class=\"form-group col-md-6\">\n                                <input id=\"message-wait-reply\" type=\"text\" placeholder=\"Stop Gathering After\" df-replytime>\n                            </div>\n                        </div>\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-12\">\n                                <input id=\"message-wait-url\" type=\"text\" placeholder=\"URL\" df-mediaurl>\n                            </div>\n                        </div>\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-12\">\n                                <textarea id=\"message-wait-txt\" placeholder=\"Message\" df-message></textarea>\n                            </div>\n                        </div>\n\n                        <div class=\"collapsable-container\">\n                            <a href=\"javascript:void(0);\" class=\"collapsable-toggle btn-config\" data-onOpenText='<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x-circle\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line></svg>' data-onCloseText=\"Show Msg Config\">Show Msg Config</a>\n                            <div id=\"expand\">\n\n                                <div class=\"form-row\">\n                                    <div class=\"form-group col-md-6\">\n                                        <label for=\"message-sendMsgFrom\">Send Message From</label>\n                                        <input id=\"message-sendMsgFrom\" type=\"text\" df-sendmsg_from>\n                                    </div>\n\n                                    <div class=\"form-group col-md-6\">\n                                        <label for=\"message-sendMsgTo\">Send Message To</label>\n                                        <input id=\"message-sendMsgTo\" type=\"text\" df-sendmsg_to>\n                                    </div>\n                                </div>\n\n                                <div class=\"form-row\">\n                                    <div class=\"form-group col-md-6\">\n                                        <label for=\"message-programmableChatService\">Programmable Chat Service</label>\n                                        <input id=\"message-programmableChatSer+vice\" type=\"text\" df-programmable_chat_service>\n                                    </div>\n\n                                    <div class=\"form-group col-md-6\">\n                                        <label for=\"message-programmableChatChannel\">Programmable Chat Channel</label>\n                                        <input id=\"message-programmableChatChannel\" type=\"text\" df-programmable_chat_channel>\n                                    </div>\n                                </div>\n\n                                <div class=\"form-row\">\n                                    <div class=\"form-group col-md-12\">\n                                        <label for=\"message-MSGAttribute\">Message Attributes</label>\n                                        <textarea id=\"message-MSGAttribute\" df-msg_attribute></textarea>\n                                    </div>\n                                </div>\n                                \n                            </div>\n                        </div>\n                        \n                    </div>\n                </div>\n            ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "f7275611-671f-4b01-9e46-fec8409f8716",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 995,
+                    "pos_y": 22
+                },
+                "f7275611-671f-4b01-9e46-fec8409f8716": {
+                    "id": "f7275611-671f-4b01-9e46-fec8409f8716",
+                    "name": "make-http-request",
+                    "data": {
+                        "widget_name": "sfs",
+                        "requesttype": "post",
+                        "mediaurl": "fsadfs",
+                        "contenttype": "form_url_encoded",
+                        "requestbody": "asgasgasfgg"
+                    },
+                    "class": "make-http-request",
+                    "html": "\n                <div>\n                    <div class=\"title-box\"><span class=\"icon\" ><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-git-pull-request\"><circle cx=\"18\" cy=\"18\" r=\"3\"></circle><circle cx=\"6\" cy=\"6\" r=\"3\"></circle><path d=\"M13 6h3a2 2 0 0 1 2 2v7\"></path><line x1=\"6\" y1=\"9\" x2=\"6\" y2=\"21\"></line></svg></span> Make HTTP Request</div>\n                    <div class=\"box\">\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-6\">\n                                <input id=\"http-request-widgetName\" placeholder=\"Widget Name\" type=\"text\" df-widget_name>\n                            </div>\n                            <div class=\"form-group col-md-6\">\n                                <select id=\"http-request-request-type\" df-requesttype>\n                                    <option value=\"get\">GET</option>\n                                    <option value=\"post\">POST</option>\n                                </select>\n                            </div>\n                        </div>\n\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-6\">\n                                <input id=\"http-request-url\" placeholder=\"URL\" type=\"text\" df-mediaurl>\n                            </div>\n                            <div class=\"form-group col-md-6\">\n                                <select id=\"http-request-contentType\" df-contentType>\n                                    <option value=\"form_url_encoded\">Form URL Encoded</option>\n                                    <option value=\"app/json\">Application/JSON</option>\n                                </select>\n                            </div>\n                        </div>\n\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-6\">\n                                <input id=\"http-request-requestBody\" placeholder=\"Request Body\" type=\"text\" df-requestbody>\n                            </div>\n                        </div>\n\n\n                    </div>\n                </div>\n            ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "737f6ef9-51f4-44c6-973b-6d3078d9b023",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "24f08951-3d30-4d7e-8ec5-8830c0b84504",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 599,
+                    "pos_y": 283
+                }
+            }
+        }
+    }
+}

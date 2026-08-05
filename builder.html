@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Builder - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+    <style>
+
+        .form-group label, label {
+            font-size: 12px;
+        }
+
+
+        a.btn-drawflow {
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 12px;
+            color: #868dff;
+            font-weight: 700;
+            width: 100%;
+            background: #000;
+            padding: 7px 11px;
+        }
+        
+    </style>
+
+  <link rel="stylesheet" type="text/css" href="./builder-assets/builder-addons/drawflow.min.css" />
+  <link rel="stylesheet" type="text/css" href="./builder-assets/builder-addons/codemirror.css" />
+  <link rel="stylesheet" type="text/css" href="./builder-assets/builder-addons/tagify.css" />
+  <link rel="stylesheet" type="text/css" href="https://codemirror.net/theme/darcula.css">
+  <link rel="stylesheet" type="text/css" href="./builder-assets/builder-addons/snackbar.min.css" />
+  <link rel="stylesheet" href="//cdn.addpipe.com/2.0/pipe.css">
+  <script type="text/javascript" src="//cdn.addpipe.com/2.0/pipe.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="./builder-assets/builder.css" />
+    
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+    <style>
+        .tagify {
+            height: auto;
+            border: none;
+        }
+        .tagify__input {
+            padding: 12px!important;
+            line-height: 2!important;
+        }
+        .tagify__input tag {
+            height: 23px;
+            /* font-size: 15px; */
+            padding: 2px;
+            font-size: 12px;
+            font-weight: 900;
+        }
+
+        .tagify.split-custom-value-tag {
+            min-height: 45px;
+        }
+        .tagify.split-custom-value-tag .tagify__input {
+            padding: 0!important;
+            line-height: normal!important;
+        }
+        .tagify.split-custom-value-tag .tagify__input:before {
+            line-height: normal;
+            height: 8px;
+            vertical-align: middle;
+            padding: 4px 3px;
+            color: #fff;
+        }
+        .tagify.split-custom-value-tag .tagify__tag:hover .tagify__tag-text {
+            color: #000;
+        }
+        .tagify.split-custom-value-tag .tagify__tag:hover .tagify__tag__removeBtn {
+            color: #000;
+        }
+    </style>
+
+</head>
+<body class="alt-menu">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen"> <div class="loader"> <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+    </div></div></div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm">
+
+            <ul class="navbar-item theme-brand flex-row  text-center">
+                <li class="nav-item theme-logo">
+                    <a href="javascript:void(0);">
+                        <img src="assets/img/90x90.jpg" class="navbar-logo" alt="logo">
+                    </a>
+                </li>
+                <li class="nav-item theme-text">
+                    <a href="javascript:void(0);" class="nav-link"> TextBot </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-item flex-row ml-md-auto">
+
+                <li class="nav-item dropdown user-profile-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="assets/img/90x90.jpg" alt="avatar">
+                    </a>
+                    <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                        <div class="">
+                            <div class="dropdown-item">
+                                <a class="" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> My Profile</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg> Inbox</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Lock Screen</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="sub-header-container">
+        <header class="header navbar navbar-expand-sm">
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
+
+            <div class="automation-pipline-container">
+    
+                <div class="title">
+
+                    <div class="title-content">
+                        <h5>My Workflow</h5>
+                    </div>
+                    
+                    <div class="editormode ml-md-5 ml-2 d-md-block d-none">
+
+                        <div class="btn-group btn-lock" role="group" aria-label="Basic example">
+                            <button id="lock" type="button" class="btn btn-editor-mode " onclick="editor.editor_mode='fixed'; changeMode('lock');">Fixed</button>
+                            <button id="unlock" type="button" class="btn btn-editor-mode active" onclick="editor.editor_mode='edit'; changeMode('unlock');">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Button trigger modal -->
+                <div class="bar-zoom d-md-none d-sm-inline-block">
+                    <span class="icon" onclick="editor.zoom_out()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zoom-out"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    </span>
+
+                    <span class="icon" onclick="editor.zoom_reset()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </span>
+
+                    <span class="icon" onclick="editor.zoom_in()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    </span>
+                </div>
+                
+                
+            </div>
+            
+            <div class="action-btns ml-auto mr-3">
+
+                <a href="./revisions.html" class="btn btn-info btn-revision d-none d-md-inline-block"><span class="badge badge-primary">121</span> Revisions</a>
+                <button type="button" class="btn btn-publish">Publish</button>
+            </div>
+
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container sidebar-closed sbar-open" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            
+            <nav id="sidebar">
+                <div class="shadow-bottom"></div>
+
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu">
+                        <a href="#starter-kit" data-active="true" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                                <span>Work Flows</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="submenu list-unstyled collapse show" id="starter-kit" data-parent="#accordionExample" style="">
+                            <li class="active">
+                                <a href="builder.html"> Builder </a>
+                            </li>
+                            <li>
+                                <a href="manage-flows.html"> Manage Flows </a>
+                            </li>
+                            <li>
+                                <a href="revisions.html"> Revisions </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+        
+        <!--  BEGIN CONTENT PART  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+
+                <div class="row layout-top-spacing">
+
+                    <!-- It all STARTs from HERE -->
+                    
+                    <div class="col-md-12">
+
+                        <div class="builder-container">
+                            
+                        
+                            <div class="wrapper">
+                                
+                                <div class="drawflow-area">
+                                    <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+                                        
+                                        <div class="bar-zoom d-md-flex d-none">
+                                            <span class="icon" onclick="editor.zoom_out()">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zoom-out"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                            </span>
+
+                                            <span class="icon" onclick="editor.zoom_reset()">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                            </span>
+
+                                            <span class="icon" onclick="editor.zoom_in()">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="drawflow-widget show">
+
+                                    <div class="toggle-widget-list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+                                    </div>
+                                    <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="split-based-on">
+                                        <span class="icon" style="background: #ff7d75;    background: #84e3c8;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-divide"><circle cx="12" cy="6" r="2"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="2"></circle></svg></span><span class="name"> Split Based On</span>
+                                    </div>
+                                    <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="set-variables">
+                                        <span class="icon" style="background: #ff7d75;    background: #ff7882;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg></span><span class="name"> Set Variables</span>
+                                    </div>
+                                    <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="send-message">
+                                        <span class="icon" style="background: #02beaf;    background: #74add4;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span><span class="name"> Send Message</span>
+                                    </div>
+                                    <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="send-message-wait">
+                                        <span class="icon" style="background: #02beaf;    background: #e57b69;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span class="name"> Send Message & Wait</span>
+                                    </div>
+                                    <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="run-function">
+                                        <span class="icon" style="background: #fad05f;    background: #8e77be;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-command"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></span><span class="name"> Run Function</span>
+                                    </div>
+                                    <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="make-http-request">
+                                        <span class="icon" style="background: #fad05f;     background: #cebf5c;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-pull-request"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg></span><span class="name"> Make Http Request</span>
+                                    </div>
+    
+    
+
+
+                                    <button type="button" class="btn btn-primary btn-block modal-activity export-data" data-toggle="modal" data-target="#exampleModal">
+                                        Show JSON Data
+                                    </button>
+                                    <button type="button" class="btn btn-success btn-block modal-activity import-data" data-toggle="modal" data-target="#exampleModal">
+                                        Import JSON Data
+                                    </button>
+                                    <button class="btn btn-dark btn-block clear-data" onclick="editor.clearModuleSelected()">Clear All</button>
+                                    
+    
+                                </div>
+
+
+                                <div class="drawflow-widget-fields">
+                                    
+                                    <div class="toggle-widget-fields">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+                                    </div>
+
+
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="config-tab" data-toggle="tab" href="#config" role="tab" aria-controls="config" aria-selected="true">Config</a>
+                                        </li>
+                                        <!-- <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="transition-tab" data-toggle="tab" href="#transition" role="tab" aria-controls="transition" aria-selected="false">Transition</a>
+                                        </li> -->
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="config" role="tabpanel" aria-labelledby="config-tab">
+                                            
+
+                                            <div class="df-fields-content">
+
+                                                <div class="df_trigger_fields">
+                                                    <div class="box">
+        
+                                                        <div class="trigger-fields">
+                                
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-12">                        
+                                                                    
+                                                                    <label for="">Textbot Name</label>
+                                                                    <div class="input-group">
+                                                                        <input id="trigger-flowName" class="form-control" placeholder="" type="text" df-name aria-describedby="basic-addon1">
+                                                                        <div class="input-group-append">
+                                                                            <span class="input-group-text" id="basic-addon1" data-clipboard-target="#trigger-flowName"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                <div class="form-group col-md-3">
+        
+                                                                    <label for="">Country</label>
+                                                                    <div class="input-group">
+                                                                        <!-- <input id="trigger-resetApi" class="form-control" placeholder="Reset Api" type="text" df-resetapi aria-describedby="basic-addon2"> -->
+
+                                                                        <div class="manual-select">
+                                                                            <div class="caret"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg></div>
+                                                                            <select id="countryCd" name="countryCd" class="countryCd form-control" data-error-id='name-error'>
+                                                                                <option data-img="+000" value="000">+000</option>
+                                                                                <option data-img="USA" value="1">United States (+1)</option>
+                                                                                <option data-img="UK" value="44">United Kingdom (+44)</option>
+                                                                                <option data-img="Canada" value="1">Canada (+1)</option>
+                                                                                <option data-img="Australia" value="61">Australia (+61)</option>
+                                                                                <option data-img="Germany" value="49">Germany (+49)</option>
+                                                                                <option data-img="Sweden" value="46">Sweden (+46)</option>
+                                                                                <option data-img="Denmark" value="45">Denmark (+45)</option>
+                                                                                <option data-img="Norway" value="47">Norway (+47)</option>
+                                                                                <option data-img="New-Zealand" value="64">New Zealand (+64)</option>
+                                                                                <option data-img="Afghanistan" value="93">Afghanistan (+93)</option>
+                                                                                <option data-img="Albania" value="355">Albania (+355)</option>
+                                                                                <option data-img="Algeria" value="213">Algeria (+213)</option>
+                                                                                <option data-img="American-Samoa" value="376">Andorra (+376)</option>
+                                                                                <option data-img="Angola" value="244">Angola (+244)</option>
+                                                                                <option data-img="Antigua Barbuda" value="1">Antigua &amp; Barbuda (+1)</option>
+                                                                                <option data-img="Argentina" value="54">Argentina (+54)</option>
+                                                                                <option data-img="Armenia" value="374">Armenia (+374)</option>
+                                                                                <option data-img="Aruba" value="297">Aruba (+297)</option>
+                                                                                <option data-img="Austria" value="43">Austria (+43)</option>
+                                                                                <option data-img="Azerbaijan" value="994">Azerbaijan (+994)</option>
+                                                                                <option data-img="Bahamas" value="1">Bahamas (+1)</option>
+                                                                                <option data-img="Bahrain" value="973">Bahrain (+973)</option>
+                                                                                <option data-img="Bangladesh" value="880">Bangladesh (+880)</option>
+                                                                                <option data-img="Barbados" value="1">Barbados (+1)</option>
+                                                                                <option data-img="Belarus" value="375">Belarus (+375)</option>
+                                                                                <option data-img="Belgium" value="32">Belgium (+32)</option>
+                                                                                <option data-img="Belize" value="501">Belize (+501)</option>
+                                                                                <option data-img="Benin" value="229">Benin (+229)</option>
+                                                                                <option data-img="Bermuda" value="1">Bermuda (+1)</option>
+                                                                                <option data-img="Bhutan" value="975">Bhutan (+975)</option>
+                                                                                <option data-img="Bolivia" value="591">Bolivia (+591)</option>
+                                                                                <option data-img="Bosnia" value="387">Bosnia &amp; Herzegovina (+387)</option>
+                                                                                <option data-img="Botswana" value="267">Botswana (+267)</option>
+                                                                                <option data-img="Brazil" value="55">Brazil (+55)</option>
+                                                                                <option data-img="British" value="1">British Virgin Islands (+1)</option>
+                                                                                <option data-img="Brunei" value="673">Brunei (+673)</option>
+                                                                                <option data-img="Bulgaria" value="359">Bulgaria (+359)</option>
+                                                                                <option data-img="Burkina" value="226">Burkina Faso (+226)</option>
+                                                                                <option data-img="Burundi" value="257">Burundi (+257)</option>
+                                                                                <option data-img="Cambodia" value="855">Cambodia (+855)</option>
+                                                                                <option data-img="Cameroon" value="237">Cameroon (+237)</option>
+                                                                                <option data-img="Cape" value="238">Cape Verde (+238)</option>
+                                                                                <option data-img="Cayman" value="1">Cayman Islands (+1)</option>
+                                                                                <option data-img="Central-African" value="236">Central African Republic (+236)</option>
+                                                                                <option data-img="Chad" value="235">Chad (+235)</option>
+                                                                                <option data-img="Chile" value="56">Chile (+56)</option>
+                                                                                <option data-img="China" value="86">China (+86)</option>
+                                                                                <option data-img="Colombia" value="57">Colombia (+57)</option>
+                                                                                <option data-img="Comoros" value="269">Comoros (+269)</option>
+                                                                                <option data-img="Costa-Rica" value="506">Costa Rica (+506)</option>
+                                                                                <option data-img="Croatia" value="385">Croatia (+385)</option>
+                                                                                <option data-img="Cuba" value="53">Cuba (+53)</option>
+                                                                                <option data-img="Cyprus" value="357">Cyprus (+357)</option>
+                                                                                <option data-img="Czechia" value="420">Czechia (+420)</option>
+                                                                                <option data-img="Côte" value="225">Côte d’Ivoire (+225)</option>
+                                                                                <option data-img="Djibouti" value="253">Djibouti (+253)</option>
+                                                                                <option data-img="Dominica" value="1">Dominica (+1)</option>
+                                                                                <option data-img="Dominican" value="1">Dominican Republic (+1)</option>
+                                                                                <option data-img="Ecuador" value="593">Ecuador (+593)</option>
+                                                                                <option data-img="Egypt" value="20">Egypt (+20)</option>
+                                                                                <option data-img="El-Salvador" value="503">El Salvador (+503)</option>
+                                                                                <option data-img="Equatorial-Guinea" value="240">Equatorial Guinea (+240)</option>
+                                                                                <option data-img="Eritrea" value="291">Eritrea (+291)</option>
+                                                                                <option data-img="Estonia" value="372">Estonia (+372)</option>
+                                                                                <option data-img="Ethiopia" value="251">Ethiopia (+251)</option>
+                                                                                <option data-img="Fiji" value="679">Fiji (+679)</option>
+                                                                                <option data-img="Finland" value="358">Finland (+358)</option>
+                                                                                <option data-img="France" value="33">France (+33)</option>
+                                                                                <option data-img="Gabon" value="241">Gabon (+241)</option>
+                                                                                <option data-img="Georgia" value="995">Georgia (+995)</option>
+                                                                                <option data-img="Ghana" value="233">Ghana (+233)</option>
+                                                                                <option data-img="Greece" value="30">Greece (+30)</option>
+                                                                                <option data-img="Grenada" value="1">Grenada (+1)</option>
+                                                                                <option data-img="Guatemala" value="502">Guatemala (+502)</option>
+                                                                                <option data-img="Guernsey" value="44">Guernsey (+44)</option>
+                                                                                <option data-img="Guinea" value="224">Guinea (+224)</option>
+                                                                                <option data-img="Guinea-Bissau" value="245">Guinea-Bissau (+245)</option>
+                                                                                <option data-img="Guyana" value="592">Guyana (+592)</option>
+                                                                                <option data-img="Haiti" value="509">Haiti (+509)</option>
+                                                                                <option data-img="Honduras" value="504">Honduras (+504)</option>
+                                                                                <option data-img="Hong-Kong" value="852">Hong Kong SAR China (+852)</option>
+                                                                                <option data-img="Hungary" value="36">Hungary (+36)</option>
+                                                                                <option data-img="Iceland" value="354">Iceland (+354)</option>
+                                                                                <option data-img="India" value="91">India (+91)</option>
+                                                                                <option data-img="Indonesia" value="62">Indonesia (+62)</option>
+                                                                                <option data-img="Iran" value="98">Iran (+98)</option>
+                                                                                <option data-img="Iraq" value="964">Iraq (+964)</option>
+                                                                                <option data-img="Ireland" value="353">Ireland (+353)</option>
+                                                                                <option data-img="Israel" value="972">Israel (+972)</option>
+                                                                                <option data-img="Italy" value="39">Italy (+39)</option>
+                                                                                <option data-img="Jamaica" value="1">Jamaica (+1)</option>
+                                                                                <option data-img="Japan" value="81">Japan (+81)</option>
+                                                                                <option data-img="Jordan" value="962">Jordan (+962)</option>
+                                                                                <option data-img="Kazakhstan" value="7">Kazakhstan (+7)</option>
+                                                                                <option data-img="Kenya" value="254">Kenya (+254)</option>
+                                                                                <option data-img="Kuwait" value="965">Kuwait (+965)</option>
+                                                                                <option data-img="Kyrgyzstan" value="996">Kyrgyzstan (+996)</option>
+                                                                                <option data-img="Laos" value="856">Laos (+856)</option>
+                                                                                <option data-img="Latvia" value="371">Latvia (+371)</option>
+                                                                                <option data-img="Lebanon" value="961">Lebanon (+961)</option>
+                                                                                <option data-img="Lesotho" value="266">Lesotho (+266)</option>
+                                                                                <option data-img="Liberia" value="231">Liberia (+231)</option>
+                                                                                <option data-img="Libya" value="218">Libya (+218)</option>
+                                                                                <option data-img="Liechtenstein" value="423">Liechtenstein (+423)</option>
+                                                                                <option data-img="Lithuania" value="370">Lithuania (+370)</option>
+                                                                                <option data-img="Luxembourg" value="352">Luxembourg (+352)</option>
+                                                                                <option data-img="Macedonia" value="389">Macedonia (+389)</option>
+                                                                                <option data-img="Madagascar" value="261">Madagascar (+261)</option>
+                                                                                <option data-img="Malawi" value="265">Malawi (+265)</option>
+                                                                                <option data-img="Malaysia" value="60">Malaysia (+60)</option>
+                                                                                <option data-img="Maldives" value="960">Maldives (+960)</option>
+                                                                                <option data-img="Mali" value="223">Mali (+223)</option>
+                                                                                <option data-img="Malta" value="356">Malta (+356)</option>
+                                                                                <option data-img="Mauritania" value="222">Mauritania (+222)</option>
+                                                                                <option data-img="Mauritius" value="230">Mauritius (+230)</option>
+                                                                                <option data-img="Mexico" value="52">Mexico (+52)</option>
+                                                                                <option data-img="Moldova" value="373">Moldova (+373)</option>
+                                                                                <option data-img="Monaco" value="377">Monaco (+377)</option>
+                                                                                <option data-img="Mongolia" value="976">Mongolia (+976)</option>
+                                                                                <option data-img="Montenegro" value="382">Montenegro (+382)</option>
+                                                                                <option data-img="Morocco" value="212">Morocco (+212)</option>
+                                                                                <option data-img="Mozambique" value="258">Mozambique (+258)</option>
+                                                                                <option data-img="Myanmar" value="95">Myanmar (Burma) (+95)</option>
+                                                                                <option data-img="Namibia" value="264">Namibia (+264)</option>
+                                                                                <option data-img="Nepal" value="977">Nepal (+977)</option>
+                                                                                <option data-img="Netherlands" value="31">Netherlands (+31)</option>
+                                                                                <option data-img="Nicaragua" value="505">Nicaragua (+505)</option>
+                                                                                <option data-img="Niger" value="227">Niger (+227)</option>
+                                                                                <option data-img="Nigeria" value="234">Nigeria (+234)</option>
+                                                                                <option data-img="North-Korea" value="850">North Korea (+850)</option>
+                                                                                <option data-img="Oman" value="968">Oman (+968)</option>
+                                                                                <option data-img="Pakistan" value="92">Pakistan (+92)</option>
+                                                                                <option data-img="Palau" value="680">Palau (+680)</option>
+                                                                                <option data-img="Palestinian" value="970">Palestinian Territories (+970)</option>
+                                                                                <option data-img="Panama" value="507">Panama (+507)</option>
+                                                                                <option data-img="Papua" value="675">Papua New Guinea (+675)</option>
+                                                                                <option data-img="Paraguay" value="595">Paraguay (+595)</option>
+                                                                                <option data-img="Peru" value="51">Peru (+51)</option>
+                                                                                <option data-img="Philippines" value="63">Philippines (+63)</option>
+                                                                                <option data-img="Poland" value="48">Poland (+48)</option>
+                                                                                <option data-img="Portugal" value="351">Portugal (+351)</option>
+                                                                                <option data-img="Puerto" value="1">Puerto Rico (+1)</option>
+                                                                                <option data-img="Qatar" value="974">Qatar (+974)</option>
+                                                                                <option data-img="Romania" value="40">Romania (+40)</option>
+                                                                                <option data-img="Russia" value="7">Russia (+7)</option>
+                                                                                <option data-img="Rwanda" value="250">Rwanda (+250)</option>
+                                                                                <option data-img="Réunion" value="262">Réunion (+262)</option>
+                                                                                <option data-img="Samoa" value="685">Samoa (+685)</option>
+                                                                                <option data-img="San-Marino" value="378">San Marino (+378)</option>
+                                                                                <option data-img="Saudi-Arabia" value="966">Saudi Arabia (+966)</option>
+                                                                                <option data-img="Senegal" value="221">Senegal (+221)</option>
+                                                                                <option data-img="Serbia" value="381">Serbia (+381)</option>
+                                                                                <option data-img="Seychelles" value="248">Seychelles (+248)</option>
+                                                                                <option data-img="Sierra-Leone" value="232">Sierra Leone (+232)</option>
+                                                                                <option data-img="Singapore" value="65">Singapore (+65)</option>
+                                                                                <option data-img="Slovakia" value="421">Slovakia (+421)</option>
+                                                                                <option data-img="Slovenia" value="386">Slovenia (+386)</option>
+                                                                                <option data-img="Solomon-Islands" value="677">Solomon Islands (+677)</option>
+                                                                                <option data-img="Somalia" value="252">Somalia (+252)</option>
+                                                                                <option data-img="South-Africa" value="27">South Africa (+27)</option>
+                                                                                <option data-img="South-Korea" value="82">South Korea (+82)</option>
+                                                                                <option data-img="Spain" value="34">Spain (+34)</option>
+                                                                                <option data-img="Sri-Lanka" value="94">Sri Lanka (+94)</option>
+                                                                                <option data-img="Sudan" value="249">Sudan (+249)</option>
+                                                                                <option data-img="Suriname" value="597">Suriname (+597)</option>
+                                                                                <option data-img="Swaziland" value="268">Swaziland (+268)</option>
+                                                                                <option data-img="Switzerland" value="41">Switzerland (+41)</option>
+                                                                                <option data-img="Syria" value="963">Syria (+963)</option>
+                                                                                <option data-img="Sao-Tome-and-Principe" value="239">São Tomé &amp; Príncipe (+239)</option>
+                                                                                <option data-img="Tajikistan" value="992">Tajikistan (+992)</option>
+                                                                                <option data-img="Tanzania" value="255">Tanzania (+255)</option>
+                                                                                <option data-img="Thailand" value="66">Thailand (+66)</option>
+                                                                                <option data-img="Timor-Leste" value="670">Timor-Leste (+670)</option>
+                                                                                <option data-img="Togo" value="228">Togo (+228)</option>
+                                                                                <option data-img="Tonga" value="676">Tonga (+676)</option>
+                                                                                <option data-img="Trinidad-and-Tobago" value="1">Trinidad &amp; Tobago (+1)</option>
+                                                                                <option data-img="Tunisia" value="216">Tunisia (+216)</option>
+                                                                                <option data-img="Turkey" value="90">Turkey (+90)</option>
+                                                                                <option data-img="Turkmenistan" value="993">Turkmenistan (+993)</option>
+                                                                                <option data-img="Uganda" value="256">Uganda (+256)</option>
+                                                                                <option data-img="Ukraine" value="380">Ukraine (+380)</option>
+                                                                                <option data-img="UAE" value="971">United Arab Emirates (+971)</option>
+                                                                                <option data-img="Uruguay" value="598">Uruguay (+598)</option>
+                                                                                <option data-img="Uzbekistan" value="998">Uzbekistan (+998)</option>
+                                                                                <option data-img="Vanuatu" value="678">Vanuatu (+678)</option>
+                                                                                <option data-img="Venezuela" value="58">Venezuela (+58)</option>
+                                                                                <option data-img="Vietnam" value="84">Vietnam (+84)</option>
+                                                                                <option data-img="Yemen" value="967">Yemen (+967)</option>
+                                                                                <option data-img="Zambia" value="260">Zambia (+260)</option>
+                                                                                <option data-img="Zimbabwe" value="263">Zimbabwe (+263)</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        
+                                                                        <!-- <div class="input-group-append">
+                                                                            <span class="input-group-text" id="basic-addon2" data-clipboard-target="#trigger-resetApi"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>
+                                                                        </div> -->
+                                                                    </div>
+                                                                </div>
+
+                                                                
+                                                                <div class="form-group col-md-9">
+        
+                                                                    <label for="">Phone Number</label>
+                                                                    <div class="input-group">
+                                                                        <input id="trigger-phone-number" class="form-control" placeholder="" type="text" df-resetapi aria-describedby="phone-number">
+                                                                        
+                                                                        <div class="input-group-append">
+                                                                            <span class="input-group-text" id="phone-number" data-clipboard-target="#trigger-resetApi"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    
+                                                                    <label for="">Webhook URL</label>
+                                                                    <div class="input-group">
+                                                                        <input id="trigger-webhookurl" class="form-control" placeholder="" type="text" aria-describedby="basic-addon3">
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    
+                                                                    <label for="">Share Code</label>
+                                                                    <div class="input-group">
+                                                                        <input id="trigger-sharecode" class="form-control" placeholder="" type="text" aria-describedby="basic-addon3">
+                                                                        <div class="input-group-append">
+                                                                            <span class="input-group-text" id="basic-addon3" data-clipboard-target="#trigger-sharecode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="form-group col-md-12">
+        
+                                                                    <label for="">Test Contacts</label>
+                                                                    <div class="input-group">
+                                                                        <textarea id="trigger-testcontact" class="form-control" placeholder="" aria-describedby="basic-addon4"></textarea>
+                                                                        <div class="input-group-append">
+                                                                            <span class="input-group-text" id="basic-addon4" data-clipboard-target="#trigger-testsers"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <h6>Incoming Voice Message</h6>
+                                                                </div>
+                                                            </div> -->
+
+                                                            <div class="audio-recorder-container">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-12">
+
+                                                                        <label for="">Incoming Voice Message</label>                                                                    
+                                                                        <div class="input-group">
+                                                                            <!-- <input id="trigger-webhookurl" class="form-control" placeholder="Webhook Url" type="text" df-webhookurl  aria-describedby="basic-addon5"> -->
+                                                                            <select id="trigger-incoming-voice" class="form-control" df-variable>
+                                                                                <option value="choose-voice" selected="true">Select Voice Message</option>
+                                                                                <option value="voice-1">Voice 1</option>
+                                                                                <option value="voice-2">Voice 2</option>
+                                                                                <option value="voice-3">Voice 3</option>
+                                                                                <option value="voice-4">Voice 4</option>
+                                                                                <option value="voice-5">Voice 5</option>
+                                                                                <option value="voice-6">Voice 6</option>
+                                                                                <option value="voice-7">Voice 7</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="collapsable-container">
+
+                                                                    <a href="javascript:void(0);" class="create-variables collapsable-toggle create-new-incoming-voice-message-audio btn-add-fn" data-onOpenText='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>' data-onCloseText="Add Audio">Add Audio</a>
+                                    
+                                                                    <div id="expand" class="add-active">
+                                                                        <div class="form-new-incoming-voice-message-audio">
+                                    
+                                                                            <div class="form-row">
+                                                                                <div class="form-group col-md-12">
+                                                                                    <div class="audio-input-area">
+
+                                                                                        <div class="recorder">
+                                                                                            <p class="title">1. Start recording your message</p>
+                                                                                            
+                                                                                            <div id="controls">
+                                                                                                <button id="recordButton" class="btn btn-recorder-controls-recordButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Record</button>
+                                                                                                <button id="pauseButton" class="btn btn-recorder-controls-pauseButton" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Pause</button>
+                                                                                                <button id="stopButton" class="btn btn-recorder-controls-stopButton" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-stop-circle"><circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect></svg> Stop</button>
+                                                                                            </div>
+
+                                                                                            <p id="status-text"></p>
+
+                                                                                            <div class="wave-player-container w-p-container">
+                                                                                                <div id="waveform"></div>
+                                                                                                <div style="text-align: center; margin-bottom: 15px; margin-top: 15px;">
+                                                                                                    <button class="wave-btn wave-play btn-wave-play-action btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                                                                                                    <button class="wave-btn wave-pause btn-wave-pause-action btn btn-primary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></button>
+                                                                                                    <button class="wave-btn wave-upload btn-wave-upload-action btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg></button>
+                                                                                                </div>
+                                                                                            </div>
+                                        
+                                                                                        </div>
+                                        
+                                                                                        <div class="divider-content">
+                                                                                            OR
+                                                                                        </div>
+                                        
+                                                                                        <div class="audio-uploader">
+                                                                                            <p class="title">2. Upload from device</p>
+                                                                                            <div class="input-group">
+                                                                                                <div class="custom-file">
+                                                                                                <input type="file" class="audio-input custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                                                                </div>
+                                                                                            </div>
+                                        
+                                                                                            <div id="inputWave" class="mt-2"></div>
+                                        
+                                                                                            <button class="wave-upload-input-btn w-i-play wave-upload-input-play btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                                                                                            <button class="wave-upload-input-btn w-i-pause wave-upload-input-pause btn btn-primary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></button>
+                                                                                            <button class="wave-upload-input-btn w-i-upload wave-input-upload btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg></button>
+                                                                                        </div>
+                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                    
+                                                                        </div>
+
+                                                                    </div>
+                                    
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="form-row mt-2">
+                                                                <div class="form-group col-md-12">
+
+                                                                    <label for="">Press 1 Voice Message</label>                                                                    
+                                                                    <div class="input-group">
+                                                                        <!-- <input id="trigger-webhookurl" class="form-control" placeholder="Webhook Url" type="text" df-webhookurl  aria-describedby="basic-addon5"> -->
+                                                                        <select id="trigger-press1-voice" class="form-control" df-variable>
+                                                                            <option value="choose-voice" selected="true">Select Voice Message</option>
+                                                                            <option value="voice-1">Voice 1</option>
+                                                                            <option value="voice-2">Voice 2</option>
+                                                                            <option value="voice-3">Voice 3</option>
+                                                                            <option value="voice-4">Voice 4</option>
+                                                                            <option value="voice-5">Voice 5</option>
+                                                                            <option value="voice-6">Voice 6</option>
+                                                                            <option value="voice-7">Voice 7</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                            <div class="collapsable-container">
+                                
+                                                                <a href="javascript:void(0);" class="create-variables collapsable-toggle create-new-incoming-voice-message-audio btn-add-fn" data-onOpenText='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>' data-onCloseText="Add Audio">Add Audio</a>
+                                
+                                                                <div id="expand" class="add-active">
+                                                                    <div class="form-new-incoming-voice-message-audio">
+
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-12">
+                                                                                <div class="audio-input-area">
+
+                                                                                    <div class="recorder">
+                                                                                        <p class="title">1. Start recording your message</p>
+                                                                                        
+                                                                                        <div id="controls">
+                                                                                            <button id="press1-recordButton" class="btn btn-recorder-controls-recordButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Record</button>
+                                                                                            <button id="press1-pauseButton" class="btn btn-recorder-controls-pauseButton" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Pause</button>
+                                                                                            <button id="press1-stopButton" class="btn btn-recorder-controls-stopButton" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-stop-circle"><circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect></svg> Stop</button>
+                                                                                        </div>
+
+                                                                                        <p id="press1-status-text"></p>
+
+                                                                                        <div class="press1-wave-player-container w-p-container">
+                                                                                            <div id="press1-waveform">
+                                                                                            </div>
+                                                                                            <div style="text-align: center; margin-bottom: 15px; margin-top: 15px;">
+                                                                                                <button class="wave-btn press1-wave-play btn-wave-play-action btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                                                                                                <button class="wave-btn press1-wave-pause btn-wave-pause-action btn btn-primary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></button>
+                                                                                                <button class="wave-btn press1-wave-upload btn-wave-upload-action btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg></button>
+                                                                                                <!-- <span id="recordingsList"></span> -->
+                                                                                            </div>
+                                                                                        </div>
+                                    
+                                                                                    </div>
+                                    
+                                                                                    <div class="divider-content">
+                                                                                        OR
+                                                                                    </div>
+                                    
+                                                                                    <div class="audio-uploader">
+                                                                                        <p class="title">2. Upload from device</p>
+                                                                                        <div class="input-group">
+                                                                                            <div class="custom-file">
+                                                                                            <input type="file" class="press1_audio-input custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                                            <label class="custom-file-label press1_custom-file" for="inputGroupFile01">Choose file</label>
+                                                                                            </div>
+                                                                                        </div>
+                                    
+                                                                                        <div id="press1_inputWave"></div>
+                                    
+                                                                                        <button class="wave-upload-input-btn w-i-play press1-wave-upload-input-play btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                                                                                        <button class="wave-upload-input-btn w-i-pause press1-wave-upload-input-pause btn btn-primary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></button>
+                                                                                        <button class="wave-upload-input-btn w-i-upload press1-wave-input-upload btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg></button>
+                                                                                    </div>
+                                    
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                
+                                                                    </div>
+                                
+                                                                </div>
+                                
+                                                            </div>
+                                                            
+                                                        </div>
+
+                                                        <div class="df-fields-button">
+                                                            <button id="save" widgetid="" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="df_split-based-on_fields">
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <!-- <div class="form-group col-md-12">
+                                                                <input id="split-widgetName" class="form-control" placeholder="Action Name" type="text" df-widget_name>
+                                                            </div> -->
+
+                                                            <!-- <div class="form-row"> -->
+                                                                <div class="form-group col-md-12">
+                                                                    <label for="">Action Name</label>
+                                                                    <input id="split-based-actionName" class="form-control" placeholder="" type="text">
+                                                                </div>
+                                                            <!-- </div> -->
+                                                            
+                                                            <div class="form-group col-md-12">
+
+                                                                <label for="">Set Value As</label>
+                                                                <div class="input-group">
+                                                                    <!-- <input id="trigger-webhookurl" class="form-control" placeholder="Webhook Url" type="text" df-webhookurl  aria-describedby="basic-addon5"> -->
+                                                                    <select id="split_based-setValueAs" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Choose...</option>
+                                                                        <option value="times-called">Number of times called</option>
+                                                                        <option value="permission">Permission</option>
+                                                                        <option value="contact">Contact</option>
+                                                                        <option value="tags">Tag</option>
+                                                                        <option value="contact-rank">Contact Rank</option>
+                                                                        <option value="custom-variable">Custom Variable</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div id="times-called_container" class="form-split-based-on_setValueas form-group col-md-12">                                                                
+                                                                <label for="">Number of Times Called</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <!-- <input id="times_called-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                    <select id="split_based-setValueAs-times_called" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Conditions...</option>
+                                                                        <option value="one-less">1 or less</option>
+                                                                        <option value="two-more">2 or more</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="permission_container" class="form-split-based-on_setValueas form-group col-md-12">                                                                
+                                                                <label for="">Permission</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <!-- <input id="permission-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                    <select id="split_based-setValueAs-premission" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Conditions...</option>
+                                                                        <option value="granted">Granted</option>
+                                                                        <option value="not-granted">Not Granted</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="contact_container" class="form-split-based-on_setValueas form-group col-md-12">
+                                                                <label for="">Contact</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <!-- <input id="contact-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                    <select id="split_based-setValueAs-contact" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Conditions...</option>
+                                                                        <option value="name-is-set">Name Is Set</option>
+                                                                        <option value="name-is-not-set">Name Is Not Set</option>
+                                                                        <option value="in-group">In Group</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div id="in-group_container" class="mt-2">
+                                                                    <label for="">In Group</label>
+                                                                    <div class="input-group" data-input="custom-value">
+                                                                        <!-- <input id="contact-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                        <select id="split_based-setValueAs-in_group" class="form-control" df-variable>
+                                                                            <option value="choose-variable">Choose...</option>
+                                                                            <option value="contact-group-1">Contact Group 1</option>
+                                                                            <option value="contact-group-2">Contact Group 2</option>
+                                                                            <option value="contact-group-3">Contact Group 3</option>
+                                                                            <option value="contact-group-4">Contact Group 4</option>
+                                                                            <option value="contact-group-5">Contact Group 5</option>
+                                                                            <option value="contact-group-6">Contact Group 6</option>
+                                                                            <option value="contact-group-7">Contact Group 7</option>
+                                                                            <option value="contact-group-8">Contact Group 8</option>
+                                                                            <option value="contact-group-9">Contact Group 9</option>
+                                                                            <option value="contact-group-10">Contact Group 10</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+
+                                                            <div id="tags_container" class="form-split-based-on_setValueas form-group col-md-12">
+                                                                <label for="">Tag</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <input id="split_based-setValueAs-tag_condition" class="custom-val split-custom-value-tag form-control" placeholder="Custom Value" type="text">
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="contact-rank_container" class="form-split-based-on_setValueas form-group col-md-12">
+                                                                <label for="">Set Condition</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <!-- <input id="contact_rank-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                    <select id="split_based-setValueAs-contact_rank" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Choose...</option>
+                                                                        <option value="equal">&#61;</option>
+                                                                        <option value="less-than">&lt;</option>
+                                                                        <option value="greater-than">&gt;</option>
+                                                                    </select>
+                                                                </div>
+                                                                
+                                                                <label for="" class="mt-2">Select Number</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <!-- <input id="contact_rank-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                    <select id="split_based-setValueAs-select_number" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Choose...</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                        <option value="7">7</option>
+                                                                        <option value="8">8</option>
+                                                                        <option value="9">9</option>
+                                                                        <option value="10">10</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div id="custom-variable_container" class="form-split-based-on_setValueas form-group col-md-12">
+                                                                <label for="">Variable</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <!-- <input id="custom_variable-condition" class="custom-val form-control" placeholder="Custom Value" type="text"> -->
+                                                                    <select id="split_based-setValueAs-custom_variable" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Choose...</option>
+                                                                        <option value="custom-variable-1">Custom Variable 1</option>
+                                                                        <option value="custom-variable-2">Custom Variable 2</option>
+                                                                        <option value="custom-variable-3">Custom Variable 3</option>
+                                                                        <option value="custom-variable-4">Custom Variable 4</option>
+                                                                        <option value="custom-variable-5">Custom Variable 5</option>
+                                                                        <option value="custom-variable-6">Custom Variable 6</option>
+                                                                    </select>
+                                                                </div>
+                                                                
+                                                                <label for="" class="mt-2">Value Is</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <input id="split_based-setValueAs-value_is" class="custom-val form-control" placeholder="Custom Value" type="text">
+                                                                </div>
+
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="df_set-variables_fields">
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Action Name</label>
+                                                                <input id="set-variable-actionName" class="form-control" placeholder="" type="text" df-widget_name>
+                                                            </div>
+                                                        </div>
+                                
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                
+                                                                <label for="">Choose a Field</label>
+                                                                <div class="input-group">
+                                                                    <select id="set-variable-field" data-relationship="choose-a-field-custom" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Choose...</option>
+                                                                        <option value="first-name">First Name</option>
+                                                                        <option value="last-name">Last Name</option>
+                                                                        <option value="email">Email</option>
+                                                                        <option value="permission-granted">Permission Granted</option>
+                                                                        <option value="status">Status</option>
+                                                                        <option value="tag">Tag</option>
+                                                                        <option value="contact-group">Contact Group</option>
+                                                                        <option value="unsubscribed">Unsubscribed</option>
+                                                                        <option value="street-1">Street 1</option>
+                                                                        <option value="street-2">Street 2</option>
+                                                                        <option value="city">City</option>
+                                                                        <option value="state">State</option>
+                                                                        <option value="zip">Zip</option>
+                                                                        <option value="country">Country</option>
+                                                                        <option value="company-name">Company Name</option>
+                                                                        <option value="title">Title</option>
+                                                                        <option value="rank">Rank</option>
+                                                                        <option value="custom">Custom</option>
+                                                                    </select>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row choose-a-field-custom">
+                                                            
+                                                            <div class="form-group col-md-12">   
+                                                                <div class="create-variable-container ">
+                                    
+                                                                    <div id="expand" class="add-active">
+                                                                    
+                                                                        <div class="form-variable">
+                                                                            <input class="var-key form-control" placeholder="Key" type="text"/>
+                                                                            <textarea class="var-value mt-3 form-control" placeholder="Value"></textarea>
+                                                                            <a href="javascript:void(0);" class="add-variable add-content">Add</a>
+                                                                            <a href="javascript:void(0);" class="save-variable save-content">Save</a>
+                                                                        </div>
+                                    
+                                                                    </div>
+                                        
+                                                                    <div class="collapsable-container collapsable-table">
+                                        
+                                                                        <a href="javascript:void(0);" class="collapsable-toggle btn-show-list" data-onOpenText='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>' data-onCloseText='Show Table <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>'>Show Table <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg></a>
+                                        
+                                                                        <div id="expand" class="table-responsive">
+                                        
+                                                                            <table class="variable-table table">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Key</th>
+                                                                                        <th>Value</th>
+                                                                                        <th>Actions</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                        
+                                                                                <tbody>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        
+                                                                        </div>
+                                        
+                                                                    </div>
+                                        
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+
+                                                                <label for="">Set Value As</label>
+                                                                <div class="input-group">
+                                                                    <!-- <input id="trigger-webhookurl" class="form-control" placeholder="Webhook Url" type="text" df-webhookurl  aria-describedby="basic-addon5"> -->
+                                                                    <select id="set-variable-setValueAs" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Choose...</option>
+                                                                        <option value="current-reply">Current Reply</option>
+                                                                        <option value="text-reply">Text Reply From Actions</option>
+                                                                        <option value="custom-value">Custom Value</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div id="text-reply_container" class="form-group col-md-12">
+
+                                                                <label for="">Text Reply From Actions</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <select id="set-variable-textReplyFromActions" class="form-control" df-variable>
+                                                                        <option value="choose-variable">Set Value As:</option>
+                                                                        <option value="current-reply">Current Reply</option>
+                                                                        <option value="text-reply">Text Reply From Actions</option>
+                                                                        <option value="custom-value">Custom Value</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div id="custom-value_container" class="form-group col-md-12">                                                                
+                                                                <label for="">Custom Value</label>
+                                                                <div class="input-group" data-input="custom-value">
+                                                                    <input id="set-variable-customValue" class="custom-val form-control" placeholder="" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="df_send-message_fields">
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Action Name</label>
+                                                                <input id="message-widgetName" type="text"  class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                        <!-- Text Message -->
+                                                        
+                                                        <div class="form-row text-message-option">
+                                                            <div class="form-group col-sm-12">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" value="text-message" name="msg-options" id="gridRadios1" value="option1" checked>
+                                                                    <label class="form-check-label" for="gridRadios1">
+                                                                        Text Message
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-row send-msg-options text-message">
+
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Message Template</label>
+                                                                <select id="message-template" class="form-control">
+                                                                    <option value="choose-msg-template">Choose Message Template...</option>
+                                                                    <option value="message-template-1">Message Template 1</option>
+                                                                    <option value="message-template-2">Message Template 2</option>
+                                                                    <option value="message-template-3">Message Template 3</option>
+                                                                    <option value="message-template-4">Message Template 4</option>
+                                                                    <option value="message-template-5">Message Template 5</option>
+                                                                    <option value="message-template-6">Message Template 6</option>
+                                                                    <option value="message-template-7">Message Template 7</option>
+                                                                    <option value="message-template-8">Message Template 8</option>
+                                                                    <option value="message-template-9">Message Template 9</option>
+                                                                    <option value="message-template-10">Message Template 10</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group col-md-12  mb-5">
+                                                                <label for="">Custom Message</label>
+                                                                <textarea name="custom-msg" class="custom-msg form-control send_msg-custom-text-Msg" id="" cols="30" rows="10"></textarea>
+                                                                <button class="btn btn-primary">Save as Message Templates</button>
+                                                            </div>
+                                                            
+                                                        </div>
+
+
+
+                                                        <!-- Audio Message -->
+                                                        
+                                                        <div class="form-row audio-message-option">
+                                                            <div class="form-group col-sm-12">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" value="audio-message" name="msg-options" id="gridRadios2" value="option1" checked>
+                                                                    <label class="form-check-label" for="gridRadios2">
+                                                                        Audio Message
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-row send-msg-options audio-message">
+
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">How would you like to send voice message.</label>
+                                                                <select id="audio-msg-option" class="form-control">
+                                                                    <option value="choose-voice-message">Choose Message Template...</option>
+                                                                    <option value="rec-upload-msg">Record/Upload a Message</option>
+                                                                    <option value="use-tts">Use Text to Speech</option>
+                                                                    <option value="voice-url">URL of Voice File</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <!-- Audio recorder -->
+                                                            <div class="form-group col-md-12 form-new-voice rec-upload-msg">
+
+                                                                <div class="audio-input-area">
+
+                                                                    <div class="recorder">
+                                                                        <p class="title">1. Start recording your message</p>
+                                                                        
+                                                                        <div id="controls">
+                                                                            <button id="sendMsg-recordButton" class="btn btn-recorder-controls-recordButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Record</button>
+                                                                            <button id="sendMsg-pauseButton" class="btn btn-recorder-controls-pauseButton" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Pause</button>
+                                                                            <button id="sendMsg-stopButton" class="btn btn-recorder-controls-stopButton" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-stop-circle"><circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect></svg> Stop</button>
+                                                                        </div>
+
+                                                                        <p id="sendMsg-status-text"></p>
+
+                                                                        <div class="sendMsg-wave-player-container w-p-container">
+                                                                            <div id="sendMsg-waveform">
+                                                                            </div>
+                                                                            <div style="text-align: center; margin-bottom: 15px; margin-top: 15px;">
+                                                                                <button class="wave-btn sendMsg-wave-play btn-wave-play-action btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                                                                                <button class="wave-btn sendMsg-wave-pause btn-wave-pause-action btn btn-primary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></button>
+                                                                                <button class="wave-btn sendMsg-wave-upload btn-wave-upload-action btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg></button>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="setInputName mt-3">
+                                                                            <input type="text" class="form-control setRecordedAudio">
+                                                                        </div>
+                    
+                                                                    </div>
+                    
+                                                                    <div class="divider-content">
+                                                                        OR
+                                                                    </div>
+                    
+                                                                    <div class="audio-uploader">
+                                                                        <p class="title">2. Upload from device</p>
+                                                                        <div class="input-group">
+                                                                            <div class="custom-file">
+                                                                            <input type="file" class="sendMsg_audio-input custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                            <label class="custom-file-label sendMsg_custom-file" for="inputGroupFile01">Choose file</label>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                        <div id="sendMsg_inputWave"></div>
+                    
+                                                                        <button class="wave-upload-input-btn w-i-play sendMsg-wave-upload-input-play btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                                                                        <button class="wave-upload-input-btn w-i-pause sendMsg-wave-upload-input-pause btn btn-primary" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></button>
+                                                                        <button class="wave-upload-input-btn w-i-upload sendMsg-wave-input-upload btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg></button>
+
+                                                                        <div class="setInputName mt-3">
+                                                                            <input type="text" class="form-control setuploadedAudio">
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                    
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!-- TTS -->                                                            
+                                                            <div class="form-group col-md-12 form-new-voice use-tts">
+
+                                                                <label for="">Your Text</label>
+                                                                <input id="your-text" type="text" class="form-control" placeholder="">
+
+                                                                <label for="" class="mt-2">Select Voice</label>
+                                                                <select id="new-voice-list" class="form-control">
+                                                                </select>
+                                                                
+                                                                <button class="btn btn-primary btn-text-voice mt-2">Text Voice</button>
+                                                                
+                                                            </div>
+
+                                                            <div class="form-group col-md-12 form-new-voice voice-url">
+                                                                <label for="">URL</label>
+                                                                <input id="setAudoMsgUrl" type="url" class="form-control" placeholder="">
+                                                            </div>
+                                                            
+
+                                                            <div class="col-sm-12">
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="notify-me" id="notify-me">
+                                                                <label class="form-check-label" for="notify-me">
+                                                                    Notify me when clicked
+                                                                </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 mb-5">
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="allow-contact" id="allow-reply">
+                                                                <label class="form-check-label" for="allow-reply">
+                                                                    Allow contact to reply
+                                                                </label>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+
+
+
+                                                        <!-- Video Message -->
+                                                        
+                                                        <div class="form-row video-message-option">
+                                                            <div class="form-group col-sm-12">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" value="video-message" name="msg-options" id="gridRadios3" value="option1" checked>
+                                                                    <label class="form-check-label" for="gridRadios3">
+                                                                        Video Message
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-row send-msg-options video-message">
+
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">How would you like to send Video message.</label>
+                                                                <select id="video-msg-option" class="form-control">
+                                                                    <option value="choose-msg-template">Choose Message Template...</option>
+                                                                    <option value="video-rec-upload-msg">Record/Upload a Message</option>
+                                                                    <option value="video-url">URL of Video File</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group col-md-12 form-new-video video-rec-upload-msg">
+                                                                <div class="video-input-area">
+
+                                                                    <div class="recorder">
+                                                                        <p class="title">1. Start recording your message</p>
+                    
+                                                                        <button class="btn btn-primary recordVideoModal" data-toggle="modal" data-target="#recordVideo">Record a Video</button>
+                    
+                                                                        <div id="custom-idq"></div>
+                                                                    </div>
+                    
+                                                                    
+                                                                    <div class="divider-content">
+                                                                        OR
+                                                                    </div>
+                                                                    
+                    
+                                                                    <div class="video-uploader">
+                                                                        <p class="title">2. Upload from device</p>
+                                                                        <div class="input-group">
+                                                                            <div class="custom-file">
+                                                                            <input type="file" class="video-input custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                        <button data-toggle="modal" data-target="#chkUploadVideo" class="btn btn-primary viewUploadedVideo">View</button>
+                                                                        
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="form-group col-md-12 form-new-video video-url">
+                                                                <label for="">Enter the video URL</label>
+                                                                <input id="setVideoMsgUrl" type="url" class="form-control" placeholder="">
+                                                            </div>
+
+                                                            <!-- <div class="form-group col-md-12">
+                                                                <label for="">Custom Message</label>
+                                                                <textarea name="custom-msg" class="custom-msg form-control" id="" cols="30" rows="10"></textarea>
+                                                                <button class="btn btn-primary">Save as Message Templates</button>
+                                                            </div> -->
+
+                                                            <div class="col-sm-12">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="notify-me">
+                                                                    <label class="form-check-label" for="notify-me">
+                                                                        Notify me when clicked
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 mb-5">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="allow-reply">
+                                                                    <label class="form-check-label" for="allow-reply">
+                                                                        Allow contact to reply
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+
+                                
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+        
+ 
+                                                <div class="df_send-message-wait_fields">
+        
+                                                    <div class="box">
+        
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Action Name</label>
+                                                                <input id="message-wait-actionName" type="text"  class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="">Choose Number</label>
+                                                                <select id="message-wait-chooseNumber" class="form-control">
+                                                                    <option value="choose-numbers">Choose...</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="31">31</option>
+                                                                    <option value="32">32</option>
+                                                                    <option value="33">33</option>
+                                                                    <option value="34">34</option>
+                                                                    <option value="35">35</option>
+                                                                    <option value="36">36</option>
+                                                                    <option value="37">37</option>
+                                                                    <option value="38">38</option>
+                                                                    <option value="39">39</option>
+                                                                    <option value="40">40</option>
+                                                                    <option value="41">41</option>
+                                                                    <option value="42">42</option>
+                                                                    <option value="43">43</option>
+                                                                    <option value="44">44</option>
+                                                                    <option value="45">45</option>
+                                                                    <option value="46">46</option>
+                                                                    <option value="47">47</option>
+                                                                    <option value="48">48</option>
+                                                                    <option value="49">49</option>
+                                                                    <option value="50">50</option>
+                                                                    <option value="51">51</option>
+                                                                    <option value="52">52</option>
+                                                                    <option value="53">53</option>
+                                                                    <option value="54">54</option>
+                                                                    <option value="55">55</option>
+                                                                    <option value="56">56</option>
+                                                                    <option value="57">57</option>
+                                                                    <option value="58">58</option>
+                                                                    <option value="59">59</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="form-group col-md-6">
+                                                                <label for="">Choose Unit</label>
+                                                                <select id="message-wait-chooseUnit" class="form-control">
+                                                                    <option value="choose-unit">Choose...</option>
+                                                                    <option value="second">Second(s)</option>
+                                                                    <option value="minute">Minute(s)</option>
+                                                                    <option value="hour">Hour(s)</option>
+                                                                    <option value="day">Day(s)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Message</label>
+                                                                <textarea id="message-wait-msg" class="mb-2 form-control txtarea" maxlength="160" placeholder="" aria-describedby="basic-addon4"></textarea>
+                                                                <p class="counter"><span class="numeric-count"></span> Characters Remaining</p>
+                                                            </div>
+                                                        </div>
+                                
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                                <div class="df_run-function_fields">
+        
+                                                    <div class="box">
+        
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Action Name</label>
+                                                                <input id="run-function-actionName" type="text"  class="form-control" placeholder="" df-widget_name>
+                                                            </div>
+
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Message</label>
+                                                                <textarea id="run-function-message" class="form-control" placeholder=""></textarea>
+                                                            </div>
+                                                            
+                                                        </div>
+                                
+                                                        <!-- <div class="create-fp-container">
+                                
+                                                            <div class="collapsable-container">
+                                
+                                                                <a href="javascript:void(0);" class="collapsable-toggle create-fp btn-add-fn" data-onOpenText='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>' data-onCloseText="Add Parameter">Function Parameter</a>
+                                
+                                                                <div id="expand">
+                                                                    <div class="form-fp">
+                                                                        <input class="fp-key form-control" placeholder="Key" type="text" />
+                                                                        <textarea class="fp-value mt-3 form-control" placeholder="Value"></textarea>
+                                                                        <a href="javascript:void(0);" class="add-fp add-content">Add</a>
+                                                                        <a href="javascript:void(0);" class="save-fp save-content">Save</a>
+                                                                    </div>
+                                                                </div>
+                                
+                                                            </div>
+                                
+                                                            <div class="collapsable-container collapsable-table">
+                                
+                                                                <a href="javascript:void(0);" class="collapsable-toggle btn-show-list" data-onOpenText='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>' data-onCloseText='Show Table <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>'>Show Table <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg></a>
+                                
+                                                                <div id="expand" class="table-responsive">
+                                                                    <table class="fp-table table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Key</th>
+                                                                                <th>Value</th>
+                                                                                <th>Actions</th>
+                                                                            </tr>
+                                                                        </thead>
+                                
+                                                                        <tbody>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                
+                                                            </div>
+                                                            
+                                                        </div> -->
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                                <div class="df_make-http-request_fields">
+        
+                                                    <div class="box">
+        
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Ping Webhook URL</label>
+                                                                <input id="http-request-fields-ping-webhook-url" class="form-control" placeholder="" type="text">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="">Request Body</label>
+                                                                <textarea id="http-request-fields-requestBody" class="form-control" placeholder=""></textarea>
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                
+                                
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                            </div>
+                                                                                        
+                                            
+                                        </div>
+                                        <!-- <div class="tab-pane fade" id="transition" role="tabpanel" aria-labelledby="transition-tab">
+
+                                            <div class="df-transition-fields-content">
+
+                                                <div class="df_trigger_fields">
+                                                    <div class="box">
+        
+                                                        <div class="trigger-fields">
+
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-12"> 
+                                                                    <label for="staticEmail2">If Next</label>
+                                                                    <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                        <option value="Choose Variables">Choose</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-12"> 
+                                                                    <label for="staticEmail2">If Next</label>
+                                                                    <select id="if-nxt"  class="if-next form-control" output="2">
+                                                                        <option value="Choose Variables">Choose</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-12"> 
+                                                                    <label for="staticEmail2">If Next</label>
+                                                                    <select id="if-nxt"  class="if-next form-control" output="3">
+                                                                        <option value="Choose Variables">Choose</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            
+                                                        </div>
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" widgetid="" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="df_split-based-on_fields">
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="df_set-variables_fields">
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+        
+                                                <div class="df_send-message_fields">
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+        
+        
+                                                <div class="df_send-message-wait_fields">
+        
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                                <div class="df_run-function_fields">
+        
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+        
+                                                        
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                                <div class="df_make-http-request_fields">
+        
+                                                    <div class="box">
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12"> 
+                                                                <label for="staticEmail2">If Next</label>
+                                                                <select id="if-nxt"  class="if-next form-control" output="1">
+                                                                    <option value="Choose Variables">Choose</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="df-fields-button">
+                                                            <button id="save" class="btn btn-primary save-fields">Save</button>
+                                                        </div>
+                                
+                                
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                            </div>
+
+                                        </div> -->
+                                    </div>
+   
+                                    
+                                </div>
+                                
+                                
+                                
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+
+                   
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Flow Definition</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="codemirror-init">
+
+                                    </div>
+
+                                    <!-- <h4>OR</h4> -->
+                                    
+                                    <div class="row mt-3 importjson">
+                                        <div class="col-md-6">
+
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                  <input type="file" class="custom-file-input" id="selectFiles" value="Import" aria-describedby="inputGroupFileAddon01" accept="application/JSON">
+                                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+
+                                        <div class="col-md-6 text-right">
+                                            <a id="importJSON" class="btn btn-success" >Import Data</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    
+                                    <a id="exportJSON" class="exportjson btn btn-secondary" >Export</a>
+                                    <button id="saveJSON" type="button" class="btn btn-primary saveData">Save</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <!-- Modal -->
+                    <div class="modal fade" id="chkUploadVideo" tabindex="-1" aria-labelledby="chkUploadVideoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="chkUploadVideoLabel">Check upload video</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <video controls id="video-tag">
+                                        <source id="video-source" src="splashVideo">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade show" id="recordVideo" tabindex="-1" aria-labelledby="recordVideoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="recordVideoLabel">Record your video</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="custom-id"></div>
+
+                                    <p class="v-recorded-time"></p>
+                                    <p class="stream-time"></p>
+                                    <div class="v-recorder-actions">
+                                        <button class="v-record-start" disabled><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 7c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-3.333L22 17V7l-4 3.333V7z"></path></svg></button>
+                                        <button class="v-record-stop" disabled><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M9 9h6v6H9z"></path></svg></button>
+                                        <div class="d-flex">
+                                            <button class="v-record-play" disabled><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></button>
+                                            <button class="v-record-pause" disabled><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></button>
+                                        </div>
+                                        <button class="v-record-save" disabled><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 21h14a2 2 0 0 0 2-2V8a1 1 0 0 0-.29-.71l-4-4A1 1 0 0 0 16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm10-2H9v-5h6zM13 7h-2V5h2zM5 5h2v4h8V5h.59L19 8.41V19h-2v-5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v5H5z"></path></svg></button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- It all ENDs from HERE -->
+                </div>
+
+            </div>
+            
+        </div>
+        <!--  END CONTENT PART  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./builder-assets/builder-addons/drawflow.min.js"></script>
+    <script src="./builder-assets/builder-addons/uuid4.min.js"></script>
+    <script src="./builder-assets/builder-addons/codemirror.js"></script>
+    <script src="./builder-assets/builder-addons/javascript.js"></script>
+    <script src="./builder-assets/builder-addons/snackbar.min.js"></script>
+    <script src="./builder-assets/builder-addons/clipboard.min.js"></script>
+    <script src="./builder-assets/builder-addons/bs-custom-file-input.min.js"></script>
+    <script src="./builder-assets/builder-addons/tagify.min.js"></script>
+
+    <script src="./builder-assets/audio-recorder/recorder.js"></script>
+    <script src="./builder-assets/audio-recorder/audio.js"></script>
+    <script src="./builder-assets/audio-recorder/press1-voice-message.js"></script>
+    <script src="./builder-assets/audio-recorder/send-voice-msg.js"></script>
+    <script src="./builder-assets/builder.js"></script>
+    
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+
+</body>
+</html>
